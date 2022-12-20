@@ -8,6 +8,8 @@ navToggle.addEventListener("click", () => {
     navMenu.classList.add("show-menu"); //adds show menu class
 });
 
+
+
 navClose.addEventListener("click", () => { 
     navMenu.classList.remove("show-menu");
 });
