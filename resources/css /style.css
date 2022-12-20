@@ -1,0 +1,572 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Roboto:ital,wght@0,300;0,400;0,500;1,400&display=swap')
+
+
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    font-size: medium;
+    background-color: rgb(216, 209, 199);
+    color: rgb(27, 20, 1);
+}
+ h1, h2, h3 {
+    color: green;
+    font-weight: 300;
+    font-family: Arial, Helvetica, sans-serif;
+    
+ }
+
+ul {
+    list-style: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    max-width: 1020px;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+}
+
+.grid {
+    display: grid;
+    gap: 1.5rem;
+
+}
+
+.section {
+    padding: 4.5rem 0 2rem;
+
+}
+
+.section_title {
+    font-size: 
+    margin-bottom: 2.5rem;
+    font-family: 
+}
+
+.subtitle {
+    font-size: 
+    color:
+    padding-left: 2 rem;
+    position: relative;
+    display: flex;
+    margin-bottom: 1.3rem;
+}
+
+.subtitle::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 20px
+    height: 2px;
+    background-color: 
+}
+
+.main {
+    overflow: hidden;
+}
+
+/* Header section styling */
+
+.header{
+    width: 100%;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index:inherit;
+    border-bottom: 1px solid rgb(100, 100, 100, 0.5)
+    transition: 0.3s;
+}
+   
+.nav {
+    height: 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 
+}
+
+.nav_toggle, 
+.nav_logo {
+    color:#01000a
+    display: inline-flex;
+
+}
+
+.nav_logo {
+    align-items: center;
+    column-gap: 0.25rem;
+    font-weight: ;
+    transition: 0.5s;
+}
+
+.nav_logo i {
+    font-size: 1.25rem;
+    color: 
+}
+
+.nav_logo:hover {
+    color:aquamarine;
+}
+
+.nav_toggle {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+    .nav_menu { 
+        position: fixed;
+        background-color: #a7ab44;
+        top: 0%;
+        right: -100%;
+        width: 100%;
+        height: 100%;
+        backdrop-filter: blur(80px);
+        transition: 0.5s;
+    }
+}
+
+.nav_list {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    row-gap:3rem;
+    padding-top: 8rem;
+}
+
+.nav_link {
+    color:darkslateblue;
+    font-size:medium;
+    font-weight: 300;
+    transition: 0.2s;
+}
+
+.nav_link:hover {
+    color:#fafafa;
+}
+
+.nav_close {
+    font-size: 2rem;
+    color:aqua;
+    position: absolute;
+    top: 1rem;
+    right: 1.2rem;
+    cursor:progress;
+}
+
+.download_link {
+    font-size:smaller;
+    padding: 1rem 2rem;
+    background-color: mediumspringgreen;
+    border-radius: 60px;
+    color:blue;
+
+}
+
+.download_link:hover {
+    background-color: brown;
+    color:beige;
+}
+
+/*show menu */
+
+.show-menu {
+    right: 0;
+}
+
+/* change background color*/
+.scroll-header {
+    background-color: blanchedalmond;
+}
+
+/* Active link */
+.active-link {
+    color:rgb(129, 53, 23);
+    position: relative;
+}
+
+
+/* HOme Section */
+.home {
+    padding-bottom: 0;
+
+}
+
+.home_container {
+    padding-top: 3rem;
+    row-gap: 3.5rem;
+}
+
+.home_title, .home_value-number {
+    color:rgb(129, 53, 23);
+}
+
+.home_title {
+    font-size:larger;
+    line-height: 1.4;
+    margin-bottom: 1.0rem;
+    text-transform: capitalize;
+}
+
+.home_description {
+    color:chocolate;
+    margin-bottom: 2rem;
+}
+
+.home-button {
+    display: inline-flex;
+    justify-content: center;
+    background-color: aquamarine;
+    color:#a7ab44;
+    padding: .9rem, 2rem;
+    border-radius: .4rem 0rem .4rem 2rem;
+    font-size: medium;
+    transition: 0.25s;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 1.5rem;
+}
+
+.home-button:hover {
+    background-color: #238ab3;
+    
+}
+
+.home_value {
+    display: flex;
+    column-gap: 2.5rem;
+    align-items: center;
+    margin-bottom: 2rem;
+
+}
+
+.home_value-number {
+    font-size: medium;
+    font-weight: 300;
+
+}
+
+.home_value-number span {
+    color:blueviolet;
+
+}
+
+.line-h {
+    height: 70px;
+    width: 2px;
+    background-color: #238ab3;
+}
+
+/* About Section */
+
+.about_description {
+    margin-bottom: 2rem;
+
+}
+
+.about_data-card {
+    display: flex;
+    margin-bottom: 3rem;
+    
+}
+.about_card {
+    background-color: bisque;
+    border-radius: 10px;
+    padding: 1.5rem;
+    position:relative;
+    overflow: hidden;
+}
+
+.about_card img {
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+}
+
+.about_card-title {
+    font-size: small;
+
+}
+
+.about_card-description {
+    font-size:smaller;
+}
+
+.about-card-icon {
+    position: absolute;
+    font-size: 1.5rem;
+    color:aquamarine;
+    background-color: bisque;
+    right: 0;
+    bottom: 0;
+    padding: .4rem;
+    border-radius: 15px 0 0 0;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.about-card-icon:hover {
+    background-color: blueviolet;
+}
+
+.models_img {
+    width: 30px;
+    opacity: 3;
+    transition: 0.4s;
+
+}
+
+.models_container {
+    grid-template-columns: repeat(3, max-content);
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding-bottom: 2rem;
+}
+
+/* === Famous / Maarufu section === */
+
+.maarufufamous {
+    margin-top: -13rem;
+    padding-bottom: 4rem;
+    padding-top: 16rem;
+    position: relative;
+
+}
+
+.maarufufamous-bg {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 50%;
+    transform: translateX(50%);
+    z-index: -1;
+}
+
+.maarufufamous_container h2 {
+    text-align:center;
+
+}
+
+.maarufufamous_card {
+    background-color: #a7ab44;
+    border-radius: 25px;
+    padding: 2rem 1.5rem;
+    width: 220px;
+    margin-bottom: 3.5rem;
+}
+
+.car-name {
+    font-size: medium;
+
+}
+
+.car-make {
+    font-size: medium;
+
+}
+.car_img {
+    height:auto;
+    transition: 0.3s;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+}
+
+.car_img:hover {
+    transform: translateX(15px);
+}
+
+.car_details {
+    display:table-row ;
+    justify-content:end;
+    align-items: center;
+
+}
+
+.car_details span {
+    font-size: medium;
+    color:aquamarine;
+    margin-top: 0.5rems;
+}
+
+.speed {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.speed img {
+    width: 100px;
+    margin-right: 0rem;
+
+}
+
+.car_btns {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.rent-btn {
+    background-color:rgb(238, 223, 11);
+    color:rgb(51, 22, 179);
+    padding: 0.5rem, 1rem;
+    border-radius: 80px;
+    font-weight: 300;
+    transition: 0.3rem;
+    margin-right: 0.8rem;
+}
+.rent-btn:hover {
+    color:rgb(129, 53, 23);
+    font-weight: bold;
+    transition: 0.3s;
+    position:relative;
+}
+
+/* App download section */
+
+.app_container {
+    background-color: #238ab3;
+    padding: 2rem 3rem 2rem;
+
+}
+
+.app_img {
+    width: 100%;
+    position: relative;
+}
+
+app._data h2 {
+    margin-bottom: 2rem;
+}
+
+.app_description {
+    margin-bottom: 2rem;
+}
+
+.android-btn a {
+    padding: 0.5rem 0.4rem;
+    color:darkmagenta;
+    font-size: small;
+    font-weight: bold;
+    display: inline-flex;
+    justify-content: center;
+    transition: 0.3s;
+
+}
+.android-btn a {
+    
+    background-color: burlywood;
+    border-radius: 5px;
+}
+
+.android-btn a:hover {
+    background-color: #a7ab44;
+    color:#fafafa;
+    border: 1px solid bisque
+}
+
+.android-btn a img{
+    width: 25px;
+    margin-right: 0.5rem;
+
+
+
+}
+
+/* footer section */
+
+.footer {
+    margin-top: 4rem;
+
+}
+
+.logo-info a {
+    margin-bottom: .8rem;
+    font-size: medium;
+}
+
+.footer_description {
+    max-width: 240px;
+}
+
+.information ul li a,
+.company ul li a { 
+    font-size: medium;
+    color:rgb(68, 8, 20);
+    transition: .3s;
+    display: inline-block;
+
+}
+
+.information ul li a:hover,
+.company ul li a:hover {
+    color:rgb(129, 53, 23);
+    transform: translateX(5px)
+
+}
+
+.socialMedia ul {
+    display: flex;
+    align-items: center;
+}
+
+.socialMedia ul li a i {
+    color: rgb(65, 65, 236);
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    border: 1px solid rgb(68, 68, 216);
+    border-radius: 50%;
+    padding: 0.5rem;
+    transition: 0.3s;
+}
+
+.socialMedia ul li a i:hover {
+    background-color: #238ab3;
+    color:#a7ab44;
+}
+.footer-line {
+    width: 100%;
+    height: 1px;
+    background-color: blanchedalmond;
+    margin: 4rem 0 1rem;
+}
+
+.copyright small {
+    text-align: center;
+    display: block;
+}
+
+
+/* For small devices */
+
+@media screen and (max-width: 300px) {
+    .container {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .section {
+        padding: 3.5rem 0 1rem;
+    }
+
+}
